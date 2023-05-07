@@ -16,72 +16,26 @@
 
     .about-content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
         .about-img-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 450px;
-            height: 100%;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
     
             img{
                 border-radius: 50%;
-                width: 250px;
-                height: 250px;
-            }
-            .about-img-icons{
-                position: absolute;
-                color: #0aea11;
-                font-size: 30px;
-
-                .icon-react {
-                    position: relative;
-                    right: 53px;
-                    bottom: 80px;
-                    font-size: 35px;
-                }
-                .icon-html {
-                    position: relative;
-                    left: 190px;
-                    bottom: 80px;
-                    font-size: 35px;
-                }
-                .icon-bootstrap {
-                    position: relative;
-                    top: 80px;
-                    left: 154px;
-                    font-size: 37px;
-                    
-                }
-                .icon-javascript {
-                    position: relative;
-                    bottom: 155px;
-                    right: 18px;
-                }
-                .icon-css {
-                    position: relative;
-                    right: 220px;
-                    top: 80px;
-                }
-                
-                .icon-github {
-                    position: relative;
-                    font-size: 35px;
-                    right: 50px;
-                    top: 150px;
-                }
+                width: 70%;
+                height: 70%;
             }
         }
 
         .about-my-info {
-            text-align: left;
-            font-weight: bold;
-            font-size: 17px;
+            font-family: "Rubik";
             color: #c1c1c1;
-            width: 75%;
-            padding-left: 35px;
+            overflow-wrap: break-word;
+            inline-size: 60%;
         }
     }
 }

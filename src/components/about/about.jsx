@@ -1,30 +1,13 @@
 import "./_aboutStyle.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { IoLogoReact } from "react-icons/io5";
-import { MdOutlineHtml } from "react-icons/md";
-import { SiBootstrap, SiJavascript, SiCss3 } from "react-icons/si";
-import { BsGithub } from "react-icons/bs";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
-    <div className="about-container" data-aos="zoom-in-up">
+    <div className="about-container">
       <p className="about-title">About me 👨‍💻</p>
       <div className="about-content">
         <div className="about-img-container">
-          <img src="/portfolio.png" />
-          <div className="about-img-icons">
-            <IoLogoReact className="icon-react" />
-            <MdOutlineHtml className="icon-html" />
-            <SiBootstrap className="icon-bootstrap" />
-            <SiJavascript className="icon-javascript" />
-            <BsGithub className="icon-github" />
-            <SiCss3 className="icon-css" />
+          <div>
+            <img src="/portfolio.png" />
           </div>
         </div>
         <div className="about-my-info">
