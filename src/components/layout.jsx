@@ -3,6 +3,7 @@ import Header from "./header/header";
 import Home from "./home/home";
 import "./_layout.scss";
 import Projects from "./projects/Projects";
+import Contact from "../contact/Contact";
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
       <Home />
       <Projects />
       <About />
+      <Contact />
     </div>
   );
 };

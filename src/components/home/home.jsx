@@ -1,8 +1,9 @@
 import "./_homeStyle.scss";
 
+// eslint-disable-next-line react/prop-types
 const Home = () => {
   return (
-    <div className="home-container">
+    <div id="section-home" className="home-container">
       <div className="home-img">
         <img
           className="profile-image"

@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable react/prop-types */
 import "./_headerStyle.scss";
 
 const Header = () => {
@@ -8,10 +10,10 @@ const Header = () => {
         <p className="header-logo-name">EC</p>
       </div>
       <div className="header-nav">
-        <a>HOME</a>
-        <a>PROYECTS</a>
-        <a>ABOUT</a>
-        <a>CONTACT</a>
+        <a href="#section-home">HOME</a>
+        <a href="#section-projects">PROJECTS</a>
+        <a href="#section-about">ABOUT</a>
+        <a href="#section-contact">CONTACT</a>
       </div>
     </header>
   );

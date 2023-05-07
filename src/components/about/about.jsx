@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./_aboutStyle.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,7 +14,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about-container" data-aos="zoom-in-up">
+    <div className="about-container" data-aos="zoom-in-up" id="section-about">
       <p className="about-title">About me 👨‍💻</p>
       <div className="about-content">
         <div className="about-img-container">
