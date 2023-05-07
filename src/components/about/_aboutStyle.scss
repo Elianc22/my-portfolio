@@ -13,12 +13,32 @@
         color: #ffffff;
         font-size: 60px;
         font-weight: bold;
+        margin-top: 150px;
     }
 
     .about-content {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        a{
+            position: relative;
+            top: 260px;
+            right: 265px;
+
+        .cv-button{
+            border-radius: 3px;
+            background-color: #0aea11;
+            border: #c1c1c1;
+            border: 1px solid rgba(255, 255, 255, 0.222);
+            border-radius: .7rem;
+            width: 200px;
+            height: 40px;
+            cursor: pointer;
+
+
+        }
+    }
 
         .about-img-container{
             display: flex;
@@ -31,6 +51,7 @@
                 border-radius: 50%;
                 width: 250px;
                 height: 250px;
+                position: absolute;
             }
             .about-img-icons{
                 position: absolute;
@@ -79,10 +100,10 @@
         .about-my-info {
             text-align: left;
             font-weight: bold;
-            font-size: 17px;
+            font-size: 22px;
             color: #c1c1c1;
             width: 75%;
-            padding-left: 35px;
+            padding-left: 10px;
         }
     }
 }

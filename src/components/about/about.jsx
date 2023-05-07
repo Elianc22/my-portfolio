@@ -28,6 +28,14 @@ const About = () => {
             <SiCss3 className="icon-css" />
           </div>
         </div>
+        <a
+          href="./elian_chavez_cv.docx.pdf"
+          download={"elian_chavez_cv.docx.pdf"}
+        >
+          <button className="cv-button" type="button">
+            Download CV
+          </button>
+        </a>
         <div className="about-my-info">
           <p>
             ¡Hola! Mi nombre es Elian Chavez, tengo 22 años y nací en Argentina.

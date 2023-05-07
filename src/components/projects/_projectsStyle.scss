@@ -33,6 +33,11 @@
             transition: all ease .3s;
             cursor: pointer;
 
+            a {
+                text-decoration: none;
+                color: #ffffff
+            }
+
             img {
                 margin-top: 30px;
                 width: 80%;
