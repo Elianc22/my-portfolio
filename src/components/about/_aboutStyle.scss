@@ -1,13 +1,41 @@
 .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    height: 100vh;
+    
     .about-title {
-        font-family: 'roboto condensed';
+        display: flex;
+        align-self: self-start;
+        color: #ffffff;
         font-size: 60px;
-        padding-top: 60px;
+        font-weight: bold;
+    }
 
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .about-img-container{
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+    
+            img{
+                border-radius: 50%;
+                width: 70%;
+                height: 70%;
+            }
+        }
 
         .about-my-info {
-            font-size: 40px;
+            font-family: "Rubik";
             color: #c1c1c1;
+            overflow-wrap: break-word;
+            inline-size: 60%;
         }
     }
 }
