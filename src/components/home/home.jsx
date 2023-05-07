@@ -7,7 +7,7 @@ const Home = () => {
         <img
           className="profile-image"
           alt="profile-image"
-          src="/img-portfolio.png"
+          src="/portfolio.png"
         ></img>
       </div>
       <section className="home-text-container">
@@ -19,9 +19,27 @@ const Home = () => {
           <p className="subtitle-word">Developer</p>
         </div>
         <div className="home-icons">
-          <i className="bi bi-linkedin"></i>
-          <i className="bi bi-envelope-at-fill"></i>
-          <i className="bi bi-github"></i>
+          <a
+            href="https://www.linkedin.com/in/elian-chavez-ferreyra-04758a238/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="bi bi-linkedin" />
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=chavezelian2000@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="bi bi-envelope-at-fill" />
+          </a>
+          <a
+            href="https://github.com/Elianc22?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="bi bi-github" />
+          </a>
         </div>
       </section>
     </div>
