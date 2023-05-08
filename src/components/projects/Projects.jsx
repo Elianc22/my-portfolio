@@ -18,11 +18,10 @@ const Projects = () => {
     <section className="project" id="section-projects">
       <p className="project-title">My Projects 💻</p>
       <aside className="project-cards-container">
-        <div>
+        <div data-aos="flip-right">
           <a
             href="https://github.com/Elianc22/Rick-and-Morty-Project"
             target="_blank"
-            data-aos="flip-right"
             rel="noreferrer"
           >
             <img src="/rick-and-morty-project.png" />
