@@ -80,3 +80,82 @@
     }
 
 }
+
+.contact-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+
+    .contact-title {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 270px;
+    }
+
+    .container-content-contact {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 35%;
+
+        .form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                width: 80%;
+                
+                input{
+                    border-radius: 5px;
+                    background-color: #c1c1c1;
+                }
+
+
+                textarea{
+                    resize: none;
+                    height: 100px;
+                    overflow-y: scroll;
+                    border-radius: 5px;
+                    background-color: #c1c1c1;
+
+
+                }
+                textarea::-webkit-scrollbar {
+                    width: 7px;
+                  }
+                  
+                  textarea::-webkit-scrollbar-thumb{
+                    background-color: #09090c;
+                    border-radius: 10px;
+                  }
+                  
+                  textarea::-webkit-scrollbar-track{
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                    border-radius: 10px;
+                  }
+                }
+
+                button{
+                    align-self: center;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #0aea11;
+                    width: 70%;
+                }
+        
+        }
+    }
+
+}

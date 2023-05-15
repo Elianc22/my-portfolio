@@ -1,9 +1,12 @@
 import "./_homeStyle.scss";
+import { isMobile } from "react-device-detect";
 
 // eslint-disable-next-line react/prop-types
 const Home = () => {
+  const homeStyle = isMobile ? "home-container-mobile" : "home-container";
+
   return (
-    <div id="section-home" className="home-container">
+    <div id="section-home" className={homeStyle}>
       <div className="home-img">
         <img
           className="profile-image"
@@ -11,6 +14,7 @@ const Home = () => {
           src="/portfolio.png"
         ></img>
       </div>
+
       <section className="home-text-container">
         <div className="home-main-title">
           <p>ELIAN CHAVEZ</p>

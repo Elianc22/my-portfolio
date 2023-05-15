@@ -47,3 +47,28 @@
         }
     }
 }
+
+.header-container-mobile {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #09090c;
+    z-index: 999;
+
+    .header-nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color: #3de70e;
+        
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: #3de70e;
+        }
+    }
+}
