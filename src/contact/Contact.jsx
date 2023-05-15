@@ -1,6 +1,7 @@
 import "./_contactStyles.scss";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { isMobile } from "react-device-detect";
 
 const Contact = () => {
   const form = useRef();
@@ -26,8 +27,12 @@ const Contact = () => {
       );
   };
 
+  const contactStyles = isMobile
+    ? "contact-container-mobile"
+    : "contact-container";
+
   return (
-    <section id="section-contact" className="contact-container">
+    <section id="section-contact" className={contactStyles}>
       <p className="contact-title">Let&apos;s be in contact</p>
       <div className="container-content-contact">
         <div className="form-container">
@@ -63,7 +68,11 @@ const Contact = () => {
             <button type="submit">Submit</button>
           </form>
         </div>
-        <img src="https://media4.giphy.com/media/scZPhLqaVOM1qG4lT9/giphy.gif?cid=ecf05e47icevldo3usdxw2275hhb6cjkvts9aanqfjrkphsb&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+        {isMobile ? (
+          ""
+        ) : (
+          <img src="https://media4.giphy.com/media/scZPhLqaVOM1qG4lT9/giphy.gif?cid=ecf05e47icevldo3usdxw2275hhb6cjkvts9aanqfjrkphsb&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+        )}
       </div>
     </section>
   );
